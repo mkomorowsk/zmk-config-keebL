@@ -1,0 +1,234 @@
+
+/* ZMK keymap translated from KMK */
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        macro_C: macro_C {
+            compatible = "zmk,behavior-macro";
+            label = "M_SHIFT_C";
+            bindings = <&macro_press &kp LSHIFT &kp C &macro_release &kp LSHIFT>;
+        };
+        macro_sandy: macro_sandy {
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_SMILE";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp N0        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_maciek: macro_maciek {
+            compatible = "zmk,behavior-macro";
+            label = "M_MACIEK";
+            bindings = <&kp M &kp A &kp C &kp I &kp E &kp K>;
+        };
+        macro_maciejk: macro_maciejk {
+            compatible = "zmk,behavior-macro";
+            label = "M_MACIEJK";
+            bindings = <
+                &kp M &kp A &kp C &kp I &kp E &kp J
+                &kp DOT
+                &kp K &kp O &kp M &kp O &kp R &kp O &kp W &kp S &kp K &kp I
+                &kp AT
+                &kp Q &kp D &kp F
+                &kp DOT
+                &kp G &kp O &kp V
+                &kp DOT
+                &kp Q &kp A
+            >;
+        };
+        macro_maciejka: macro_maciejka {
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_SMILE";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp N0        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_maciek2: macro_maciek2 {
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_SMILE";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp N0        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_maciej: macro_maciej {
+            compatible = "zmk,behavior-macro";
+            label = "M_MACIEJ";
+            bindings = <
+                &macro_press &kp LSHIFT &kp M &macro_release &kp LSHIFT
+                &kp A &kp C &kp I &kp E &kp J
+            >;
+        };
+        macro_komorowski: macro_komorowski {
+            compatible = "zmk,behavior-macro";
+            label = "M_KOMOROWSKI";
+            bindings = <
+                &macro_press &kp LSHIFT &kp K &macro_release &kp LSHIFT
+                &kp O &kp M &kp O &kp R &kp O &kp W &kp S &kp K &kp I
+            >;
+        };
+        macro_em_sad: macro_em_sad { /* :( */
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_SAD";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp N9        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_em_wrong: macro_em_wrong { /* :/ */
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_WRONG";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &kp SLASH
+            >;
+        };
+        macro_em_smile: macro_em_smile { /* :) */
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_SMILE";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp N0        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_em_wink: macro_em_wink { /* ;) */
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_WINK";
+            bindings = <
+                &kp SEMICOLON
+                &macro_press &kp LSHIFT &kp N0 &macro_release &kp LSHIFT
+            >;
+        };
+        macro_em_laugh: macro_em_laugh { /* :D */
+            compatible = "zmk,behavior-macro";
+            label = "M_EM_LAUGH";
+            bindings = <
+                &macro_press &kp LSHIFT &kp SEMICOLON &macro_release &kp LSHIFT
+                &macro_press &kp LSHIFT &kp D        &macro_release &kp LSHIFT
+            >;
+        };
+        macro_objectivity: macro_objectivity {
+            compatible = "zmk,behavior-macro";
+            label = "M_OBJECTIVITY";
+            bindings = <&kp O &kp B &kp J &kp E &kp C &kp T &kp I &kp V &kp I &kp T &kp Y>;
+        };
+        macro_acn: macro_acn {
+            compatible = "zmk,behavior-macro";
+            label = "M_ACN";
+            bindings = <
+                &macro_press &kp LSHIFT &kp A &macro_release &kp LSHIFT
+                &kp C &kp C &kp E &kp N &kp T &kp U &kp R &kp E
+            >;
+        };
+        macro_azdo2: macro_azdo2 {
+            compatible = "zmk,behavior-macro";
+            label = "M_AZDO2";
+            bindings = <
+                &macro_press &kp LSHIFT &kp A &macro_release &kp LSHIFT
+                &kp Z &kp U &kp R &kp E
+            >;
+        };
+        macro_juz: macro_juz {
+            compatible = "zmk,behavior-macro";
+            label = "M_JUZ";
+            bindings = <&kp J &kp U &kp Z>;
+        };
+        macro_jeszcze: macro_jeszcze {
+            compatible = "zmk,behavior-macro";
+            label = "M_JESZCZE";
+            bindings = <&kp J &kp E &kp S &kp Z &kp C &kp Z &kp E>;
+        };
+        macro_czesc: macro_czesc {
+            compatible = "zmk,behavior-macro";
+            label = "M_CZESC";
+            bindings = <&kp C &kp Z &kp E &kp S &kp C>;
+        };
+
+        ble_sel_0: ble_sel_0 { compatible = "zmk,behavior-bt"; label = "BT0";  param1 = <0>; };
+        ble_sel_1: ble_sel_1 { compatible = "zmk,behavior-bt"; label = "BT1";  param1 = <1>; };
+        ble_sel_2: ble_sel_2 { compatible = "zmk,behavior-bt"; label = "BT2";  param1 = <2>; };
+        ble_clr:   ble_clr   { compatible = "zmk,behavior-bt"; label = "BTCLR"; param2 = <1>; };
+        out_usb: out_usb { compatible = "zmk,behavior-out"; label = "OUT_USB"; param1 = <OUT_USB>; };
+        out_ble: out_ble { compatible = "zmk,behavior-out"; label = "OUT_BLE"; param1 = <OUT_BLE>; };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        #define BASE 0
+        #define RAISE 1
+        #define LOWER 2
+        #define MACROS 3
+
+        base_layer {
+            bindings = <
+                &kp ESC   &kp SLASH &kp Y   &kp O   &kp U   &kp DOT     &kp G   &kp C   &kp M    &kp N    &kp MINUS &kp DEL
+                &kp TAB   &mt LALT H  &mt LCTRL I  &mt LALT E  &mt LGUI A  &kp K
+                &kp D     &kp S       &mt LALT T   &mt RCTRL R &mt RALT P  &kp SQT
+                &kp BSLH  &kp Q    &kp COMMA &kp SEMI  &kp J   &mt RSHIFT X
+                &lt LOWER BSPC        &kp Z   &lt RAISE SPACE    &lt MACROS ENTER
+                &mt RSHIFT W        &kp F   &kp L     &kp B   &kp V      &kp EQUAL
+            >;
+        };
+
+        raise_layer {
+            bindings = <
+                &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
+                &kp CARET    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp QUESTION &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SLASH
+                &kp CAPS  &kp AMPS  &kp ASTRK  &kp SEMI  &kp MINUS
+                &mt RSHIFT UNDERSCORE
+                &lt LOWER BSPC &kp Z &none
+                &lt MACROS ENTER
+                &kp W &kp PG_UP &kp PG_DN &kp HOME &kp END &kp SQT
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+                &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp F1 &kp F2 &kp F3 &kp F10 &kp LPAR &kp RPAR
+                &kp GRAVE &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+                &kp F4 &kp F5 &kp F6 &kp F11 &kp LBRC &kp RBRC
+                &kp GRAVE &kp AMPS &kp ASTRK
+                &kp C &kp V &kp NO
+                &none &kp Z
+                &lt RAISE SPACE
+                &kp W
+                &kp F7 &kp F8 &kp F9 &kp F12 &kp LBKT &kp RBKT
+            >;
+        };
+
+        macros_layer {
+            bindings = <
+                &mt LALT F4 &mt LALT F4 &lctrl C &lctrl C &lctrl V
+                &macro_objectivity &macro_maciej &macro_komorowski
+                &kp LPAR &kp RPAR &kp LCBR &kp RCBR
+                &mt LALT TAB &macro_em_sad &macro_em_wrong &macro_em_wink &macro_em_smile &macro_em_laugh
+                &kp QUESTION &macro_sandy &macro_maciek &macro_maciejk &macro_maciejka &macro_maciek2
+                &ble_sel_0 &macro_acn &macro_azdo2 &macro_czesc &macro_juz &macro_jeszcze
+                &lt LOWER BSPC &kp Z &lt RAISE SPACE &lt MACROS ENTER
+                &ble_clr &macro_sandy &macro_maciek &macro_maciejk &macro_maciejka &macro_maciek2
+            >;
+        };
+
+        sys_layer {
+            bindings = < &ble_sel_0 &ble_sel_1 &ble_sel_2 &ble_clr &out_usb &out_ble >;
+        };
+
+        combos {
+            compatible = "zmk,combos";
+            /* BASE positions: O=3, Y=2, U=4, COMMA=26, SEMI=27, J=28, M=8, N=9, C=7, S=19, T=20, R=21, F=35, L=36, B=37 */
+
+            combo_copy { timeout-ms = <35>; key-positions = <3 2>;  bindings = <&lctrl C>; layers = <BASE>; };
+            combo_paste{ timeout-ms = <35>; key-positions = <3 4>;  bindings = <&lctrl V>; layers = <BASE>; };
+            combo_alt_tab{ timeout-ms = <35>; key-positions = <26 27 28>; bindings = <&lalt TAB>; layers = <BASE>; };
+            combo_ble_next{ timeout-ms = <35>; key-positions = <8 9 7>; bindings = <&ble_sel_0>; layers = <BASE>; };
+            combo_ble_prev{ timeout-ms = <35>; key-positions = <19 20 21>; bindings = <&ble_sel_1>; layers = <BASE>; };
+            combo_ble_clear{ timeout-ms = <35>; key-positions = <35 36 37>; bindings = <&ble_clr>; layers = <BASE>; };
+        };
+    };
+};
