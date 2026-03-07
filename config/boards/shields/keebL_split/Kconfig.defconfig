@@ -1,3 +1,0 @@
-
-config ZMK_KEYBOARD_NAME
-    default "keebL (nice!nano)"
