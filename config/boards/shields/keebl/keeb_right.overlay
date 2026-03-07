@@ -1,4 +1,4 @@
-/* keebL — nice!nano v2 RIGHT HALF
+/* keeb — nice!nano v2 RIGHT HALF
  * Hardware: 3 rows × 8 cols, COL2ROW diodes
  *
  * Right col pins (KMK order): P0.10 P0.09 P0.31 P0.29 P0.02 P1.15 P1.13 P1.11

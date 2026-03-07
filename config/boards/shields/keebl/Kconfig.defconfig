@@ -1,16 +1,16 @@
-if SHIELD_KEEBL_LEFT || SHIELD_KEEBL_RIGHT
+if SHIELD_keeb_LEFT || SHIELD_keeb_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "keebL"
+    default "keeb"
 
 config ZMK_SPLIT
     default y
 
-if SHIELD_KEEBL_LEFT
+if SHIELD_keeb_LEFT
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif # SHIELD_KEEBL_LEFT
+endif # SHIELD_keeb_LEFT
 
-endif # SHIELD_KEEBL_LEFT || SHIELD_KEEBL_RIGHT
+endif # SHIELD_keeb_LEFT || SHIELD_keeb_RIGHT

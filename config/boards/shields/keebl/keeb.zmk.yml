@@ -1,6 +1,6 @@
 file_format: "1"
-id: keebl
-name: keebL
+id: keeb
+name: keeb
 type: shield
 url: ""
 features:
@@ -8,6 +8,6 @@ features:
 requires:
   - kscan
 siblings:
-  - keebl_left
-  - keebl_right
+  - keeb_left
+  - keeb_right
 

@@ -1,7 +1,7 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: keebl_left
+    shield: keeb_left
 
   - board: nice_nano//zmk
-    shield: keebl_right
+    shield: keeb_right

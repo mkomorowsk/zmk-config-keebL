@@ -1,5 +1,5 @@
-config SHIELD_KEEBL_LEFT
-    def_bool $(shields_list_contains,keebl_left)
+config SHIELD_keeb_LEFT
+    def_bool $(shields_list_contains,keeb_left)
 
-config SHIELD_KEEBL_RIGHT
-    def_bool $(shields_list_contains,keebl_right)
+config SHIELD_keeb_RIGHT
+    def_bool $(shields_list_contains,keeb_right)
