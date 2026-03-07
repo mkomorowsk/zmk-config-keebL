@@ -1,0 +1,12 @@
+file_format: "1"
+id: keebl
+name: keebL
+type: shield
+url: ""
+features:
+  - keys
+requires:
+  - kscan
+siblings:
+  - keebl_left
+  - keebl_right

@@ -2,10 +2,30 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+
+    # zmk-unicode: community module for Unicode character input.
+    # Used for Polish diacritics (ż ś ć) in macros.
+    # See: https://github.com/nickcoutsos/zmk-unicode
+    #
+    # STATUS: Polish macros currently use ASCII approximations.
+    # To enable real diacritics:
+    #   1. Uncomment the zmk-unicode remote and project below.
+    #   2. Replace ASCII sequences in macro_juz / macro_jeszcze / macro_czesc
+    #      with the zmk-unicode syntax from that module's README.
+    #   3. On Windows: ensure Unicode Alt+numpad input is enabled in the registry.
+    - name: nickcoutsos
+      url-base: https://github.com/nickcoutsos
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
+    # Uncomment to enable zmk-unicode:
+    # - name: zmk-unicode
+    #   remote: nickcoutsos
+    #   revision: main
+
   self:
     path: config
