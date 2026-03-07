@@ -8,6 +8,7 @@
  * Rows 0 and 1 only use cols 2-7 (cols 0-1 are unused in those rows per coord_mapping).
  */
 
+
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {

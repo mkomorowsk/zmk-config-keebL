@@ -289,6 +289,7 @@
             >;
         };
 
+
         /* ── Layer 3: UTIL  (macros, BLE) ──────────────────────────── */
         /*
          * Sensitive entries (SANDY / emails) are defined in keebl_secrets.dtsi.

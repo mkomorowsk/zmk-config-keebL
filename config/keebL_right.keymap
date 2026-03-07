@@ -16,6 +16,7 @@
  * Copy keebl_secrets.dtsi.template → keebl_secrets.dtsi and fill in real values.
  */
 
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
