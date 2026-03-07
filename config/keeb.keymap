@@ -1,4 +1,4 @@
-/* keebL — ZMK keymap
+/* keeb — ZMK keymap
  * Migrated from KMK (main.py + kb.py) by Claude Code.
  *
  * 40-key split layout:  3 rows × (6+6) + (8+8) thumb row
@@ -12,14 +12,14 @@
  *          └──────────────────────────────────────────────────────────────────────────────┘
  *            ← LEFT HALF →                            ← RIGHT HALF →
  *
- * SENSITIVE macros (passwords / emails) live in keebl_secrets.dtsi (gitignored).
- * Copy keebl_secrets.dtsi.template → keebl_secrets.dtsi and fill in real values.
+ * SENSITIVE macros (passwords / emails) live in keeb_secrets.dtsi (gitignored).
+ * Copy keeb_secrets.dtsi.template → keeb_secrets.dtsi and fill in real values.
  */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keebl_secrets.dtsi"
+#include "keeb_secrets.dtsi"
 
 /* ── Layer indices ─────────────────────────────────────────────────── */
 #define BASE    0
@@ -289,9 +289,10 @@
             >;
         };
 
+
         /* ── Layer 3: UTIL  (macros, BLE) ──────────────────────────── */
         /*
-         * Sensitive entries (SANDY / emails) are defined in keebl_secrets.dtsi.
+         * Sensitive entries (SANDY / emails) are defined in keeb_secrets.dtsi.
          *
          * ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
          * │F4/AL │F4/AL │ C-c  │ C-c  │ C-v  │ OBJ  ║MACIEJ│KOMOR │  (   │  )   │  {   │  }   │

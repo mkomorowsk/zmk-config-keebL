@@ -1,4 +1,4 @@
-/* keebL — nice!nano v2 RIGHT HALF
+/* keeb — nice!nano v2 RIGHT HALF
  * Hardware: 3 rows × 8 cols, COL2ROW diodes
  *
  * Right col pins (KMK order): P0.10 P0.09 P0.31 P0.29 P0.02 P1.15 P1.13 P1.11
@@ -7,6 +7,7 @@
  * This half is the PERIPHERAL (BLE slave).
  * Rows 0 and 1 only use cols 2-7 (cols 0-1 are unused in those rows per coord_mapping).
  */
+
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
