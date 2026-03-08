@@ -2,6 +2,7 @@
 include:
   - board: nice_nano//zmk
     shield: keeb_left
+    snippet: zmk-usb-logging
 
   - board: nice_nano//zmk
     shield: keeb_right
