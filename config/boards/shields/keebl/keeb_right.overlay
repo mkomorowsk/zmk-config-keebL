@@ -8,18 +8,17 @@
  * Rows 0 and 1 only use cols 2-7 (cols 0-1 are unused in those rows per coord_mapping).
  */
 
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &transform_right;
+        zmk,physical-layout = &physical_layout_right;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
+        wakeup-source;
 
         /* col2row: columns are driven outputs, rows are pulled inputs.
          * If keys don't register, swap GPIO_PULL_UP ↔ GPIO_PULL_DOWN on row-gpios. */
@@ -62,5 +61,12 @@
             /* Row 2: keymap pos 32-39 → physical R2C0-R2C7 (all 8 cols) */
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7)
         >;
+    };
+
+    physical_layout_right: physical_layout_right {
+        compatible = "zmk,physical-layout";
+        display-name = "Right Half";
+        kscan = <&kscan0>;
+        transform = <&transform_right>;
     };
 };
