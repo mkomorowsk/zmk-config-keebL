@@ -7,18 +7,17 @@
  * This half is the CENTRAL (BLE master).
  */
 
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &transform_left;
+        zmk,physical-layout = &physical_layout_left;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
+        wakeup-source;
 
         /* col2row: columns are driven outputs, rows are pulled inputs.
          * If keys don't register, swap GPIO_PULL_UP ↔ GPIO_PULL_DOWN on row-gpios. */
@@ -63,5 +62,12 @@
             /* Row 2: keymap pos 24-31 → physical R2C0-R2C7 (all 8 cols) */
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7)
         >;
+    };
+
+    physical_layout_left: physical_layout_left {
+        compatible = "zmk,physical-layout";
+        display-name = "Left Half";
+        kscan = <&kscan0>;
+        transform = <&transform_left>;
     };
 };
