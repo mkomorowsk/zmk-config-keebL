@@ -1,8 +1,8 @@
 ---
 include:
-  - board: nice_nano@1
+  - board: rp2040
     shield: keeb_left
 
-  - board: nice_nano@1
+  - board: rp2040
     shield: keeb_right
     
