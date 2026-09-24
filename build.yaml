@@ -1,8 +1,8 @@
 ---
 include:
-  - board: rp2040
+  - board: rp2040_zero
     shield: keeb_left
 
-  - board: rp2040
+  - board: rp2040_zero
     shield: keeb_right
     
