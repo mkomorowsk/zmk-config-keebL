@@ -1,8 +1,6 @@
 ---
 include:
-  - board: rp2040_zero
+  - board: seeeduino_xiao_ble
     shield: keeb_left
-
-  - board: rp2040_zero
+  - board: seeeduino_xiao_ble
     shield: keeb_right
-    
