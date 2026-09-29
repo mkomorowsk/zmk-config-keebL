@@ -6,8 +6,7 @@ url: ""
 features:
   - keys
 requires:
-  - kscan
+  - seeed_xiao
 siblings:
   - keeb_left
   - keeb_right
-
