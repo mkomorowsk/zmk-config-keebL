@@ -27,9 +27,9 @@
 
         col-gpios
             = <&xiao_d 0 GPIO_ACTIVE_HIGH>   /* col 0 — D0 / P0.02 (unused in row 0 & 1) */
-            , <&xiao_d 1 GPIO_ACTIVE_HIGH>   /* col 1 — D1 / P0.03 (unused in row 0 & 1) */
+            , <&xiao_d 3 GPIO_ACTIVE_HIGH>   /* col 1 — D1 / P0.03 (unused in row 0 & 1) */
             , <&xiao_d 2 GPIO_ACTIVE_HIGH>   /* col 2 — D2 / P0.28 */
-            , <&xiao_d 3 GPIO_ACTIVE_HIGH>   /* col 3 — D3 / P0.29 */
+            , <&xiao_d 1 GPIO_ACTIVE_HIGH>   /* col 3 — D3 / P0.29 */
             , <&xiao_d 4 GPIO_ACTIVE_HIGH>   /* col 4 — D4 / P0.04 */
             , <&xiao_d 5 GPIO_ACTIVE_HIGH>   /* col 5 — D5 / P0.05 */
             , <&xiao_d 6 GPIO_ACTIVE_HIGH>   /* col 6 — D6 / P1.11 */
