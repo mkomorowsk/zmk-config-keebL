@@ -16,10 +16,10 @@
  * Copy keeb_secrets.dtsi.template → keeb_secrets.dtsi and fill in real values.
  */
 
-#include <behaviors.dtsi>
+
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keeb_secrets.dtsi"
+
 
 /* ── Layer indices ─────────────────────────────────────────────────── */
 #define BASE    0
@@ -302,19 +302,6 @@
          * │BTNXT │ ACN  │AZURE │CZESC │ JUZ  │JESZCZ│LW/BS │  z   ║SP/RA │EN/UT │BTCLR │SANDY │MACIK │MACJK │MACJKA│MACIK2│
          * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
          */
-        util_layer {
-            display-name = "Util";
-            bindings = <
-                /* Row 0 */
-                &mt LALT F4         &mt LALT F4         &kp LC(C)       &kp LC(C)       &kp LC(V)       &macro_objectivity
-                &macro_maciej       &macro_komorowski   &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC
-                /* Row 1 */
-                &mt LALT TAB        &macro_em_sad       &macro_em_wrong &macro_em_wink  &macro_em_smile &macro_em_laugh
-                &kp QMARK           &macro_sandy        &macro_maciek   &macro_maciejk  &macro_maciejka &macro_maciek2
-                /* Row 2 */
-                &bt BT_NXT          &macro_acn          &macro_azdo2    &macro_czesc    &macro_juz      &macro_jeszcze  &lt LOWER BSPC  &kp Z
-                &lt RAISE SPACE     &lt UTIL ENTER      &bt BT_CLR      &macro_sandy    &macro_maciek   &macro_maciejk  &macro_maciejka &macro_maciek2
-            >;
-        };
+
     };
 };
