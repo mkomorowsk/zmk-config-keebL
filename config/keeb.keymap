@@ -27,7 +27,7 @@
 #define LOWER   2
 #define UTIL    3
 
-/ {
+{
     /* ── Non-sensitive macros ──────────────────────────────────────── */
     macros {
         /* ── Emoticons ─────────────────────────────────────────────── */
