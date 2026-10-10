@@ -43,7 +43,7 @@
          * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
          * │  \   │  q   │  ,   │  ;   │  j   │x/RSF │LW/BS │  z   ║ SP/RA│EN/UT │w/RSF │  f   │  l   │  b   │  v   │  =   │
          * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
-         */
+         *
         base_layer {
             display-name = "Base";
             bindings = <
@@ -55,6 +55,20 @@
                 &kp BSLH   &kp Q      &kp COMMA  &kp SEMI   &kp J      &mt RSHFT X   &lt LOWER BSPC  &kp Z         &lt RAISE SPACE  &lt UTIL ENTER  &mt RSHFT W  &kp F   &kp L    &kp B   &kp V   &kp EQUAL
             >;
         };
+
+*/
+        base_layer {
+            display-name = "Base";
+            bindings = <
+                /* Row 0 */
+                &kp ESC    &kp SLASH  &kp Y      &kp O      &kp U      &kp DOT                                     &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+                /* Row 1 */
+                &kp TAB    &mt LALT H  &mt LCTRL I  &mt LALT E  &mt LGUI A  &kp K                                  &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+                /* Row 2 */
+                &kp BSLH   &kp Q      &kp COMMA  &kp SEMI   &kp J      &mt RSHFT X   &lt LOWER BSPC  &kp Z         &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+            >;
+        };
+
 
         /* ── Layer 1: RAISE  (numbers, symbols, nav) ───────────────── */
         /*
