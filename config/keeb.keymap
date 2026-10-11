@@ -25,8 +25,6 @@
 #define LOWER   2
 #define UTIL    3
 
-{
-
     /* ── Keymap ─────────────────────────────────────────────────────── */
     keymap {
         compatible = "zmk,keymap";
@@ -45,21 +43,32 @@
          * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
          * │  \   │  q   │  ,   │  ;   │  j   │x/RSF │LW/BS │  z   ║ SP/RA│EN/UT │w/RSF │  f   │  l   │  b   │  v   │  =   │
          * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
-         */
+         *
         base_layer {
             display-name = "Base";
             bindings = <
                 /* Row 0 */
-                &kp ESC    &kp SLASH  &kp Y      &kp O      &kp U      &kp DOT
-                &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR 
+                &kp ESC    &kp SLASH  &kp Y      &kp O      &kp U      &kp DOT                                     &kp G      &kp C      &kp M      &kp N      &kp MINUS  &kp DEL
                 /* Row 1 */
-                &kp TAB    &mt LALT H  &mt LCTRL I  &mt LALT E  &mt LGUI A  &kp K
-                &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR 
+                &kp TAB    &mt LALT H  &mt LCTRL I  &mt LALT E  &mt LGUI A  &kp K                                  &kp D      &kp S       &mt LALT T   &mt RCTRL R &mt RALT P  &kp SQT
                 /* Row 2 */
-                &kp BSLH   &kp Q      &kp COMMA  &kp SEMI   &kp J      &mt RSHFT X   &lt LOWER BSPC  &kp Z
-                &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR 
+                &kp BSLH   &kp Q      &kp COMMA  &kp SEMI   &kp J      &mt RSHFT X   &lt LOWER BSPC  &kp Z         &lt RAISE SPACE  &lt UTIL ENTER  &mt RSHFT W  &kp F   &kp L    &kp B   &kp V   &kp EQUAL
             >;
         };
+
+*/
+        base_layer {
+            display-name = "Base";
+            bindings = <
+                /* Row 0 */
+                &kp ESC    &kp SLASH  &kp Y      &kp O      &kp U      &kp DOT                                     &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+                /* Row 1 */
+                &kp TAB    &mt LALT H  &mt LCTRL I  &mt LALT E  &mt LGUI A  &kp K                                  &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+                /* Row 2 */
+                &kp BSLH   &kp Q      &kp COMMA  &kp SEMI   &kp J      &mt RSHFT X   &lt LOWER BSPC  &kp Z         &bt BT_CLR      &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR    &bt BT_CLR
+            >;
+        };
+
 
         /* ── Layer 1: RAISE  (numbers, symbols, nav) ───────────────── */
         /*
@@ -75,14 +84,11 @@
             display-name = "Raise";
             bindings = <
                 /* Row 0 */
-                &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5
-                &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp DEL
+                &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp DEL
                 /* Row 1 */
-                &kp CARET  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT
-                &kp QMARK  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SLASH
+                &kp CARET  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                  &kp QMARK  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SLASH
                 /* Row 2 */
-                &kp CAPS   &kp AMPS   &kp ASTRK  &kp SEMI   &kp MINUS  &mt RSHFT UNDER  &lt LOWER BSPC  &kp Z
-                &none      &lt UTIL ENTER  &kp W   &kp PG_UP  &kp PG_DN  &kp HOME  &kp END  &kp SQT
+                &kp CAPS   &kp AMPS   &kp ASTRK  &kp SEMI   &kp MINUS  &mt RSHFT UNDER  &lt LOWER BSPC  &kp Z     &none      &lt UTIL ENTER  &kp W   &kp PG_UP  &kp PG_DN  &kp HOME  &kp END  &kp SQT
             >;
         };
 
@@ -100,14 +106,11 @@
             display-name = "Lower";
             bindings = <
                 /* Row 0 */
-                &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5
-                &kp F1     &kp F2     &kp F3     &kp F10    &kp LPAR   &kp RPAR
+                &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                        &kp F1     &kp F2     &kp F3     &kp F10    &kp LPAR   &kp RPAR
                 /* Row 1 */
-                &kp GRAVE  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-                &kp F4     &kp F5     &kp F6     &kp F11    &kp LBRC   &kp RBRC
+                &kp GRAVE  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0                        &kp F4     &kp F5     &kp F6     &kp F11    &kp LBRC   &kp RBRC
                 /* Row 2 */
-                &kp GRAVE  &kp AMPS   &kp ASTRK  &kp LC(C)  &kp LC(V)  &none    &none  &kp Z
-                &lt RAISE SPACE  &kp W  &kp F7  &kp F8     &kp F9     &kp F12  &kp LBKT  &kp RBKT
+                &kp GRAVE  &kp AMPS   &kp ASTRK  &kp LC(C)  &kp LC(V)  &none    &none  &kp Z         &lt RAISE SPACE  &kp W  &kp F7  &kp F8     &kp F9     &kp F12  &kp LBKT  &kp RBKT
             >;
         };
 
@@ -124,6 +127,19 @@
          * │BTNXT │ ACN  │AZURE │CZESC │ JUZ  │JESZCZ│LW/BS │  z   ║SP/RA │EN/UT │BTCLR │SANDY │MACIK │MACJK │MACJKA│MACIK2│
          * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
          */
-
+        util_layer {
+            display-name = "Util";
+            bindings = <
+                /* Row 0 */
+                &mt LALT F4         &mt LALT F4         &kp LC(C)       &kp LC(C)       &kp LC(V)       &macro_objectivity
+                &macro_maciej       &macro_komorowski   &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC
+                /* Row 1 */
+                &mt LALT TAB        &macro_em_sad       &macro_em_wrong &macro_em_wink  &macro_em_smile &macro_em_laugh
+                &kp QMARK           &macro_sandy        &macro_maciek   &macro_maciejk  &macro_maciejka &macro_maciek2
+                /* Row 2 */
+                &bt BT_NXT          &macro_acn          &macro_azdo2    &macro_czesc    &macro_juz      &macro_jeszcze  &lt LOWER BSPC  &kp Z
+                &lt RAISE SPACE     &lt UTIL ENTER      &bt BT_CLR      &macro_sandy    &macro_maciek   &macro_maciejk  &macro_maciejka &macro_maciek2
+            >;
+        };
     };
 };

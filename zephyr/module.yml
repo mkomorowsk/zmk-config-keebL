@@ -1,4 +1,0 @@
-name: zmk-keyboard-keeb
-build:
-  settings:
-    board_root: .
